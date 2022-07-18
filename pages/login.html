@@ -1,0 +1,133 @@
+<!--Indicamos que esta será un documento  de tipo html--->
+<!DOCTYPE html>
+
+<!--etiqueta  html e el elemento raiz , padre de <head> y <body>.
+     con el atributo "lang" para definir el lenguaje de la pagina-->
+
+<html lang="es">
+	<!--provee información general (metadatos) acerca del documento, incluyendo 
+    su título y enlaces a scripts y hojas de estilos.-->
+
+	<head>
+		<!--codificador de caracteres de la pagina-->
+		<meta charset="UTF-8" />
+
+		<!--permiten al navegador mostrar las páginas web que no cumplen con 
+        los estándares como si corrieran en versiones anteriores de IE.-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!--sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el 
+        ancho, alto y escala del área usada por el navegador para mostrar contenido-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Enlazó o incluyo el archivo de estilos (style.css)-->
+		<link rel="stylesheet" href="../styles/login-style.css" type="text/css" />
+
+		<!--Coloca  el título en la pestaña de una página.-->
+		<title>GPIO</title>
+
+		<!--El favicon es un pequeño icono que identifica un sitio web cuando está 
+        abierto en una pestaña o cuando es guardado como favorito.-->
+		<link rel="icon" href="../imagenes/favicon-gpio.png" type="image/x-icon" />
+	</head>
+
+	<body>
+		<div class="body-layout">
+			<!--....................................HEADER....................................-->
+			<header>
+				<div class="header-logo">
+					<img class="logo-img" src="../imagenes/logo-gpio.png" alt="Logo gpio" />
+					<h1 class="logo-text">Tienda GPIO Online</h1>
+				</div>
+
+				<form class="header-search" action="">
+					<p><input type="search" placeholder="	Buscar.." name="busqueda" /></p>
+					<button>
+						<img class="ImagenTitulo" src="../imagenes/lupa.png" alt="lupa de busqueda" />
+					</button>
+				</form>
+				<div class="header-container-right">
+					<div class="header-login">
+						<img src="../imagenes/user.png" alt="usuario" />
+						<a href="./login.html">Ingresar</a>
+					</div>
+					<div class="header-carrito">
+						<a href="#"><img src="../imagenes/carrito.png" alt="carrito de compras" /></a>
+					</div>
+				</div>
+			</header>
+			<!--....................................HEADER....................................-->
+
+			<!--....................................NAV.......................................-->
+			<nav>
+				<ul class="nav-menu">
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="../index.html">Placas De Desarrollo</a>
+					</li>
+					<li class="nav-menu-item"><a class="nav-menu-link" href="#">modulos y sensores</a></li>
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="#">Componentes Electronicos</a>
+					</li>
+				</ul>
+			</nav>
+			<!--....................................NAV.......................................-->
+			<!--....................................MAIN.......................................-->
+			<main>
+				<section class="form-login">
+					<h5>Iniciar Sesion</h5>
+					<form action="">
+						<input
+							class="controls"
+							type="text"
+							name="usuario"
+							value=""
+							placeholder="Usuario o e-mail "
+							required
+							autofocus
+						/>
+						<input
+							class="controls"
+							type="password"
+							name="contrasena"
+							value=""
+							placeholder="Contraseña"
+							required
+						/>
+						<input class="button" type="submit" name="" value="Ingresar" />
+						<p><a href="#">¿Olvidaste tu contraseña?</a> <a href="./singup.html">Registrate</a></p>
+					</form>
+				</section>
+			</main>
+			<!--....................................MAIN.......................................-->
+
+			<!--....................................FOOTER.......................................-->
+			<!--pie de pagina-->
+			<footer>
+				<!--contenedor "div"-->
+				<div class="my-footer">
+					<!--agrupa una imagen con su epigrafe (epigrafe dentro de la etiqueta figcaption)"-->
+					<figure>
+						<img src="../imagenes/copyright.png" alt="copyright" />
+						<figcaption>copyright</figcaption>
+					</figure>
+					<!--contenedor "div"-->
+					<div class="informacion">
+						<!--Links: redireccionan a otras paginas (target="_blank" abre las páginas en una nueva instancia de navegador)-->
+						<a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank">
+							Derecho De Autor</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad" target="_blank"
+							>Política De Privacidad</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)" target="_blank"
+							>Cookie</a
+						>
+					</div>
+				</div>
+			</footer>
+			<!--....................................FOOTER.......................................-->
+		</div>
+	</body>
+</html>

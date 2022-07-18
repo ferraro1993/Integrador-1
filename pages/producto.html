@@ -1,0 +1,235 @@
+<!--Indicamos que esta será un documento  de tipo html--->
+<!DOCTYPE html>
+
+<!--etiqueta  html e el elemento raiz , padre de <head> y <body>.
+     con el atributo "lang" para definir el lenguaje de la pagina-->
+
+<html lang="es">
+	<!--provee información general (metadatos) acerca del documento, incluyendo 
+    su título y enlaces a scripts y hojas de estilos.-->
+
+	<head>
+		<!--codificador de caracteres de la pagina-->
+		<meta charset="UTF-8" />
+
+		<!--permiten al navegador mostrar las páginas web que no cumplen con 
+        los estándares como si corrieran en versiones anteriores de IE.-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!--sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el 
+        ancho, alto y escala del área usada por el navegador para mostrar contenido-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Enlazó o incluyo el archivo de estilos (style.css)-->
+		<link rel="stylesheet" href="../styles/producto-style.css" type="text/css" />
+
+		<!--Coloca  el título en la pestaña de una página.-->
+		<title>GPIO</title>
+
+		<!--El favicon es un pequeño icono que identifica un sitio web cuando está 
+        abierto en una pestaña o cuando es guardado como favorito.-->
+		<link rel="icon" href="../imagenes/favicon-gpio.png" type="image/x-icon" />
+	</head>
+
+	<body>
+		<div class="body-layout">
+			<!--....................................HEADER....................................-->
+			<header>
+				<div class="header-logo">
+					<img class="logo-img" src="../imagenes/logo-gpio.png" alt="Logo gpio" />
+					<h1 class="logo-text">Tienda GPIO Online</h1>
+				</div>
+
+				<form class="header-search" action="">
+					<p><input type="search" placeholder="	Buscar.." name="busqueda" /></p>
+					<button>
+						<img class="ImagenTitulo" src="../imagenes/lupa.png" alt="lupa de busqueda" />
+					</button>
+				</form>
+				<div class="header-container-right">
+					<div class="header-login">
+						<img src="../imagenes/user.png" alt="usuario" />
+						<a href="./login.html">Ingresar</a>
+					</div>
+					<div class="header-carrito">
+						<a href="#"><img src="../imagenes/carrito.png" alt="carrito de compras" /></a>
+					</div>
+				</div>
+			</header>
+			<!--....................................HEADER....................................-->
+
+			<!--....................................NAV.......................................-->
+			<nav>
+				<ul class="nav-menu">
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="../index.html">Placas De Desarrollo</a>
+					</li>
+					<li class="nav-menu-item"><a class="nav-menu-link" href="#">modulos y sensores</a></li>
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="#">Componentes Electronicos</a>
+					</li>
+				</ul>
+			</nav>
+			<!--....................................NAV.......................................-->
+
+			<!--....................................SECTION.......................................-->
+			<section>
+				<div class="my-section">
+					<article class="gallery">
+						<img class="gallery-element" src="../imagenes/productos/arduino-nano.jpg" alt="" />
+						<img
+							class="gallery-element"
+							src="../imagenes/arduino-nano/arduino-nano-cable.jpg"
+							alt=""
+						/>
+
+						<img
+							class="gallery-element"
+							src="../imagenes/arduino-nano/arduini-nano-pinout.png"
+							alt=""
+						/>
+
+						<img
+							class="gallery-element"
+							src="../imagenes/arduino-nano/arduino-nano-dimensions.png"
+							alt=""
+						/>
+						<img class="gallery-element" src="../imagenes/arduino-nano/arduino-logo.png" alt="" />
+					</article>
+
+					<article class="container-general-information">
+						<h2>Especificaciones Del Arduino</h2>
+						<table>
+							<tr>
+								<th>Microcontrolador</th>
+								<td>Atmel ATmega328</td>
+							</tr>
+							<tr>
+								<th>Tensión de Operación (nivel lógico)</th>
+								<td>5 V</td>
+							</tr>
+							<tr>
+								<th>Tensión de Alimentación (pin Vin)</th>
+								<td>7-12 V</td>
+							</tr>
+							<tr>
+								<th>Pines E/S Digitales</th>
+								<td>14 (de los cuales 6 proveen de salida PWM)</td>
+							</tr>
+							<tr>
+								<th>Entradas Analógicas</th>
+								<td>8</td>
+							</tr>
+							<tr>
+								<th>Corriente máx por cada PIN de E/S</th>
+								<td>40 mA</td>
+							</tr>
+							<tr>
+								<th>Memoria Flash</th>
+								<td>32 KB de los cuales 2KB son usados por el bootloader</td>
+							</tr>
+							<tr>
+								<th>SRAM</th>
+								<td>2 KB</td>
+							</tr>
+							<tr>
+								<th>EEPROM</th>
+								<td>1 KB</td>
+							</tr>
+							<tr>
+								<th>Frecuencia de reloj</th>
+								<td>16 MHz</td>
+							</tr>
+							<tr>
+								<th>Dimensiones</th>
+								<td>18.5mm x 43.2mm</td>
+							</tr>
+						</table>
+
+						<h6>Descripción General</h6>
+
+						<p class="container-description-text">
+							El Arduino Nano es una pequeña y completa placa basada en el ATmega328 que se usa
+							conectándola a una protoboard. Tiene la misma funcionalidad que el Arduino Uno, pero
+							con una presentación diferente. No posee conector para alimentación externa, y
+							funciona con un cable USB Mini-B en vez de el cable estandar.El nano es una plataforma
+							de E / S simple ultra-pequeña basada en código de fuente abierta, tiene una gran
+							ventaja en tamaño en comparación con la versión anterior de USB. Funduino podría
+							ofrecer servicios que necesiten operar de manera independiente y con dispositivos
+							electrónicos interactivos, y también puede conectar a aquellos que estén conectados
+							con la PC, en colaboración con flash, procesamiento, max / msp, PD, vvvv y otros
+							programas.
+						</p>
+						<p class="container-description-text">
+							Un microcontrolador es un circuito integrado programable, capaz de ejecutar las
+							órdenes grabadas en su memoria. Está compuesto de varios bloques funcionales, los
+							cuales cumplen una tarea específica. Arduino es una plataforma de hardware libre,
+							basada en una placa con un microcontrolador y un entorno de desarrollo, diseñada para
+							facilitar el uso de la electrónica en proyectos multidisciplinares. Arduino puede
+							tomar información del entorno a través de sus entradas y controlar luces, motores y
+							otros actuadores. El microcontrolador en la placa Arduino se programa mediante el
+							lenguaje de programación Arduino (basado en Wiring) y el entorno de desarrollo Arduino
+							(basado en Processing). Los proyectos hechos con Arduino pueden ejecutarse sin
+							necesidad de conectar a un computador.
+						</p>
+
+						<p class="container-description-text">
+							Podes descargar la hoja de datos del siguiente enlace:
+							<a
+								href="https://www.terraelectronica.ru/pdf/show?pdf_file=%252Fds%252Fpdf%252FA%252FArduino_Nano3.pdf"
+								target="_blank"
+								>datasheet</a
+							>
+						</p>
+					</article>
+				</div>
+			</section>
+			<!--....................................SECTION.......................................-->
+
+			<!--....................................ASIDE.......................................-->
+			<aside>
+				<div class="my-aside">
+					<h5>Arduino Nano</h5>
+					<p class="code">Código: A000005 / Código de barras: 7630049200173</p>
+					<span class="price">$1800</span>
+					<button class="btn-buy">comprar</button>
+					<h3 class="mini-description">Placa Arduino Nano V3 Atmega328 Mini Usb 16m</h3>
+					<div class="info-send">
+						<img src="../imagenes/camion-envio.png" alt="camion de envio" />
+						<p>Envío a todo el país</p>
+					</div>
+				</div>
+			</aside>
+			<!--....................................ASIDE.......................................-->
+
+			<!--....................................FOOTER.......................................-->
+			<!--pie de pagina-->
+			<footer>
+				<!--contenedor "div"-->
+				<div class="my-footer">
+					<!--agrupa una imagen con su epigrafe (epigrafe dentro de la etiqueta figcaption)"-->
+					<figure>
+						<img src="../imagenes/copyright.png" alt="copyright" />
+						<figcaption>copyright</figcaption>
+					</figure>
+					<!--contenedor "div"-->
+					<div class="informacion">
+						<!--Links: redireccionan a otras paginas (target="_blank" abre las páginas en una nueva instancia de navegador)-->
+						<a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank">
+							Derecho De Autor</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad" target="_blank"
+							>Política De Privacidad</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)" target="_blank"
+							>Cookie</a
+						>
+					</div>
+				</div>
+			</footer>
+			<!--....................................FOOTER.......................................-->
+		</div>
+	</body>
+</html>

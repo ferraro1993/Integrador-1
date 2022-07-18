@@ -1,0 +1,259 @@
+<!--Indicamos que esta será un documento  de tipo html--->
+<!DOCTYPE html>
+
+<!--etiqueta  html e el elemento raiz , padre de <head> y <body>.
+     con el atributo "lang" para definir el lenguaje de la pagina-->
+<html lang="es">
+	<!--provee información general (metadatos) acerca del documento, incluyendo 
+    su título y enlaces a scripts y hojas de estilos.-->
+	<head>
+		<!--codificador de caracteres de la pagina-->
+		<meta charset="UTF-8" />
+
+		<!--permiten al navegador mostrar las páginas web que no cumplen con 
+    	los estándares como si corrieran en versiones anteriores de IE.-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<!--sirve para optimizar los sitios para móviles, esta etiqueta ayuda a definir el 
+    	ancho, alto y escala del área usada por el navegador para mostrar contenido-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!--Enlazó o incluyo el archivo de estilos (style.css)-->
+		<link rel="stylesheet" href="./styles/style.css" type="text/css" />
+		<!--Coloca  el título en la pestaña de una página.-->
+		<title>GPIO</title>
+
+		<!--El favicon es un pequeño icono que identifica un sitio web cuando está 
+        abierto en una pestaña o cuando es guardado como favorito.-->
+		<link rel="icon" href="./imagenes/favicon-gpio.png" type="image/x-icon" />
+	</head>
+
+	<body>
+		<div class="body-layout">
+			<!--....................................HEADER....................................-->
+			<header>
+				<div class="header-logo">
+					<img class="logo-img" src="./imagenes/logo-gpio.png" alt="Logo gpio" />
+					<h1 class="logo-text">Tienda GPIO Online</h1>
+				</div>
+
+				<form class="header-search" action="">
+					<p><input type="search" placeholder="	Buscar.." name="busqueda" /></p>
+					<button>
+						<img class="ImagenTitulo" src="./imagenes/lupa.png" alt="lupa de busqueda" />
+					</button>
+				</form>
+				<div class="header-container-right">
+					<div class="header-login">
+						<img src="./imagenes/user.png" alt="usuario" />
+						<a href="./pages/login.html">Ingresar</a>
+					</div>
+					<div class="header-carrito">
+						<a href="#"><img src="./imagenes/carrito.png" alt="carrito de compras" /></a>
+					</div>
+				</div>
+			</header>
+			<!--....................................HEADER....................................-->
+
+			<!--....................................NAV.......................................-->
+			<nav>
+				<ul class="nav-menu">
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="./index.html">Placas De Desarrollo</a>
+					</li>
+					<li class="nav-menu-item"><a class="nav-menu-link" href="#">modulos y sensores</a></li>
+					<li class="nav-menu-item">
+						<a class="nav-menu-link" href="#">Componentes Electronicos</a>
+					</li>
+				</ul>
+			</nav>
+			<!--....................................NAV.......................................-->
+
+			<!--....................................ASIDE.......................................-->
+			<aside>
+				<input type="checkbox" class="bt-check" id="check" />
+				<label class="left-menu" for="check"
+					><img src="./imagenes/aside-icon.png" alt="menu"
+				/></label>
+
+				<div class="aside-filtro">
+					<h6>Filtrar por</h6>
+					<form name="filtro" method="" action="">
+						<p>Placas</p>
+						<div class="filtro-check">
+							<label for="Arduino"
+								><input type="checkbox" id="Arduino" name="Placa" value="Arduino" />Arduino</label
+							>
+
+							<label for="Esp"
+								><input type="checkbox" id="Esp" name="Placa" value="Esp" />Esp</label
+							>
+
+							<label for="raspberry_pi"
+								><input
+									type="checkbox"
+									id="raspberry_pi"
+									name="Placa"
+									value="raspberry_pi"
+								/>Raspberry Pi</label
+							>
+						</div>
+						<div class="h-line"></div>
+
+						<p>Con wifi</p>
+						<div class="filtro-radio">
+							<div>
+								<input type="radio" id="no" name="wifi" value="no" />
+								<label for="no">NO</label>
+							</div>
+							<div>
+								<input type="radio" id="si" name="wifi" value="si" />
+								<label for="si">SI</label>
+							</div>
+							<div>
+								<input type="radio" id="ambos" name="wifi" value="ambos" />
+								<label for="ambos">Ambos</label>
+							</div>
+						</div>
+
+						<div class="h-line"></div>
+
+						<p>Precios</p>
+						<div class="filtro-radio">
+							<div>
+								<input type="radio" id="pre1" name="Precio" value="1000" />
+								<label for="pre1">menos de 1000</label>
+							</div>
+							<div>
+								<input type="radio" id="pre2" name="Precio" value="3000" />
+								<label for="pre2">1000 - 3000</label>
+							</div>
+							<div>
+								<input type="radio" id="pre3" name="Precio" value="5000" />
+								<label for="pre3">3000 - 5000</label>
+							</div>
+							<div>
+								<input type="radio" id="pre4" name="Precio" value="30000" />
+								<label for="pre4">5000 - 30000</label>
+							</div>
+							<div>
+								<input type="radio" id="pre5" name="Precio" value="40000" />
+								<label for="pre5">mas de 30000</label>
+							</div>
+						</div>
+						<div class="h-line"></div>
+						<div class="btn">
+							<input type="submit" value="Filtrar" />
+						</div>
+					</form>
+				</div>
+			</aside>
+			<!--....................................ASIDE.......................................-->
+
+			<!--....................................SECTION.......................................-->
+			<section>
+				<div class="my-section">
+					<h2>Placas De Desarrollo</h2>
+
+					<div class="list-producto">
+						<article class="producto">
+							<img src="./imagenes/productos/arduino-nano.jpg" alt="Arduino Nano" />
+							<p>Arduino Nano V3.0 Atmega328p</p>
+							<span>$1800</span>
+							<a href="./pages/producto.html">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/arduino-uno.jpg" alt="Arduino uno" />
+							<p>Arduino Uno R3 Atmega328</p>
+							<span>$2800</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/arduino-mega2560.jpg" alt="Arduino mega" />
+							<p>Arduino Mega 2560</p>
+							<span>$4000</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/esp01.jpg" alt="esp 01" />
+							<p>Esp 01 Modulo Wifi</p>
+							<span>$520</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/esp8266.jpg" alt="esp 8266" />
+							<p>Nodemcu V3 Lua Esp8266</p>
+							<span>$900</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/esp32.jpg" alt="esp 32" />
+							<p>Nodemcu Esp32 Wroom</p>
+							<span>$1570</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img
+								src="./imagenes/productos/Raspberry-Pi-Pico.png"
+								alt="Raspberry Pi Pico Rp2040"
+							/>
+							<p>Raspberry Pi Pico Rp2040</p>
+							<span>$1.039</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/raspberry-pi-B3.jpg" alt="Raspberry Pi 3b" />
+							<p>Raspberry Pi 3b</p>
+							<span>$27.500</span>
+							<a href="#">Ver Producto</a>
+						</article>
+
+						<article class="producto">
+							<img src="./imagenes/productos/raspberry-pi-4B.jpg" alt="Raspberry Pi 4b 8gb" />
+							<p>Raspberry Pi 4b 8gb</p>
+							<span>$50.099</span>
+							<a href="#">Ver Producto</a>
+						</article>
+					</div>
+				</div>
+			</section>
+			<!--....................................SECTION.......................................-->
+
+			<!--....................................FOOTER.......................................-->
+			<!--pie de pagina-->
+			<footer>
+				<!--contenedor "div"-->
+				<div class="my-footer">
+					<!--agrupa una imagen con su epigrafe (epigrafe dentro de la etiqueta figcaption)"-->
+					<figure>
+						<img src="./imagenes/copyright.png" alt="copyright" />
+						<figcaption>copyright</figcaption>
+					</figure>
+					<!--contenedor "div"-->
+					<div class="informacion">
+						<!--Links: redireccionan a otras paginas (target="_blank" abre las páginas en una nueva instancia de navegador)-->
+						<a href="https://es.wikipedia.org/wiki/Derecho_de_autor" target="_blank">
+							Derecho De Autor</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Pol%C3%ADtica_de_privacidad" target="_blank"
+							>Política De Privacidad</a
+						>
+
+						<a href="https://es.wikipedia.org/wiki/Cookie_(inform%C3%A1tica)" target="_blank"
+							>Cookie</a
+						>
+					</div>
+				</div>
+			</footer>
+			<!--....................................FOOTER.......................................-->
+		</div>
+	</body>
+</html>

@@ -52,6 +52,10 @@ header {
 	justify-content: center; /*centra los elementos horizontalmente*/
 	align-items: center; /*centro los elementos verticalmente*/
 }
+.logo-text {
+	font-size: 2em; /*tamaño de la fuetne */
+	font-weight: bolder; /*negrita*/
+}
 .logo-img {
 	width: 130px; /*tamaño de la imagen*/
 }

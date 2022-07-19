@@ -435,5 +435,11 @@ footer img {
 	.gallery-element {
 		width: 100%; /*ancho*/
 	}
+	/*Aumento el tamaño y le coloco un borde 
+	cuando paso sobre el elemento con el mouse*/
+	.gallery-element:hover {
+		transform: scale(1.1);
+		border: 1px solid black;
+	}
 }
 /*---------------------------------RESPONSIVE---------------------------------*/
